@@ -2,7 +2,7 @@
 
     require_once("conn/connSocial.php");
 
-    $firstName = $_GET['firstName'];
+    // $firstName = $_GET['firstName'];
 
 
 
