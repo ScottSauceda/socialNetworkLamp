@@ -7,7 +7,7 @@
 
     // $bloggerID = 5;
     // load all blogs along w correct members and their pics
-    $query = "SELECT * FROM blogs, members WHERE blogs.mbrID = members.IDmbr ORDER BY blogDateTime DESC";
+    $query = "SELECT * FROM blogs, members WHERE blogs.mbrID = members.IDmbr ORDER BY blogDateTime ASC";
     // $query = "SELECT * FROM blogs WHERE mbrID='$bloggerID' ORDER BY IDblog DESC";
 
     $result = mysqli_query($conn, $query);
