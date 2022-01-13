@@ -18,11 +18,11 @@
     $blogID = $row['IDblog']; // current blog ID, from the above query
     // load comments for the current blog entry only
     // <?php echo $blogID; 
-    $query2 = "SELECT * FROM comments, members WHERE comments.IDmbr = members.IDmbr AND comments.IDblog = $blogID ORDER BY commentTime DESC";
-    $result2 = mysqli_query($conn, $query2) or die ("Couldn't execute query2!");
+    // $query2 = "SELECT * FROM comments, members WHERE comments.IDmbr = members.IDmbr AND comments.IDblog = $blogID ORDER BY commentTime DESC";
+    // $result2 = mysqli_query($conn, $query2) or die ("Couldn't execute query2!");
 
-    $username = $_SESSION['user'];
-    $commenterID = $_SESSION['IDmbr']
+    // $username = $_SESSION['user'];
+    // $commenterID = $_SESSION['IDmbr']
 
     
 ?>
