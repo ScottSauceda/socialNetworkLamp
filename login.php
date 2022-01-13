@@ -53,7 +53,7 @@
                 $_SESSION['imgName'] = $row['imgName'];
                 $msg .= "";
 
-                header("Location: showAllPosts.php"); // bye-bye
+                header("Location: https://socialnetwork-lamp.herokuapp.com/showAllPosts.php"); // bye-bye
   
             } else {
                 $msg = "Password or Username Incorrect";
