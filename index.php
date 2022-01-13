@@ -8,7 +8,7 @@
 $query = "SELECT * FROM blogs ORDER BY blogDateTime";
 $result = mysqli_query($conn, $query);
 
-members
+// members
 $query2 = "SELECT * FROM members ORDER BY joinTime";
 $result2 = mysqli_query($conn, $query2);
 
