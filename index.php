@@ -54,12 +54,12 @@ $result3 = mysqli_query($conn, $query3);
     <br>
     
     <div>
-        <php
+        <?php
             while($row3=mysqli_fetch_array($result3)) {
                 echo '<p>' . $row3['IDcomment'] . ' : ' . $row3['comment'] . ' : thumbsUp ' . $row3['thumbsUp'] . '  : thumbsDown ' . $row3['thumbsDown'] . '</p>';
             }
         ?>
-    </div> -->
+    </div>
 
 </body>
 </html>
