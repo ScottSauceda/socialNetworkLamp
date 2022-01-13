@@ -32,7 +32,7 @@
     // ***###*** This query is an example of the 
     // "C" in CRUD (Create, Read, Update, Delete) ***###
     // query the database to create a new member
-    $query = "INSERT INTO members(firstName, lastName, email, user, pswd, memberProfilePic, isAdmin ) VALUES('$firstName', '$lastName', '$email', '$user', '$hashedPswd', 'default.jpg', 0)";
+    $query = "INSERT INTO members(firstName, lastName, email, user, pswd, memberProfilePic) VALUES('$firstName', '$lastName', '$email', '$user', '$hashedPswd', 'default.jpg')";
 
     // execute the query (make a new record in members)
     mysqli_query($conn, $query);
@@ -51,7 +51,7 @@
         $IDmbr = mysqli_insert_id($conn);
         
         // make a default image record in images for this new member
-        $query_images = "INSERT into images(imgName, foreignID, catID, isMainPic) VALUES('cat.jpg', $IDmbr, 3, 1)";
+        $query_images = "INSERT into images(imgName, foreignID, catID, isMainPic) VALUES('default.jpg', $IDmbr, 3, 1)";
         
         mysqli_query($conn, $query_images);
         
