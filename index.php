@@ -50,7 +50,7 @@ $result3 = mysqli_query($conn, $query3);
         ?>
     </div>
 
-    <!-- <br>
+    <br>
     <br>
     
     <div>
