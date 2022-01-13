@@ -12,9 +12,9 @@ $result = mysqli_query($conn, $query);
 $query2 = "SELECT * FROM members ORDER BY joinTime";
 $result2 = mysqli_query($conn, $query2);
 
-// // comments
-// $query3 = "SELECT * FROM comments ORDER BY commentTime";
-// $result3 = mysqli_query($conn, $query3);
+// comments
+$query3 = "SELECT * FROM comments ORDER BY commentTime";
+$result3 = mysqli_query($conn, $query3);
 
 ?>
 
