@@ -8,9 +8,9 @@
 $query = "SELECT * FROM blogs ORDER BY blogDateTime";
 $result = mysqli_query($conn, $query);
 
-// members
-// $query2 = "SELECT * FROM members ORDER BY joinTime";
-// $result2 = mysqli_query($conn, $query2);
+members
+$query2 = "SELECT * FROM members ORDER BY joinTime";
+$result2 = mysqli_query($conn, $query2);
 
 // // comments
 // $query3 = "SELECT * FROM comments ORDER BY commentTime";
@@ -28,7 +28,7 @@ $result = mysqli_query($conn, $query);
     <p>
         <?php echo date("F jS, Y"); ?>
         <br/>
-        You have successfully reached Index.php in test folder of HTDOCS
+        You have successfully reached Index.php of the Social Network LAMP app.
     </p>
 
     <div>
@@ -38,7 +38,29 @@ $result = mysqli_query($conn, $query);
                 }
         ?>
     </div>
+
+    <br>
+    <br>
     
+    <div>
+        <?php
+            while($row2=mysqli_fetch_array($result2)) {
+                echo '<p>' . $row2['IDmbr'] . ' : ' . $row2['lastName'] . ' : ' . $row2['firstName'] . '  : ' . $row2['user'] . '</p>';
+            }
+        ?>
+    </div>
+
+    <!-- <br>
+    <br>
+    
+    <div>
+        <php
+            while($row3=mysqli_fetch_array($result3)) {
+                echo '<p>' . $row3['IDcomment'] . ' : ' . $row3['comment'] . ' : thumbsUp ' . $row3['thumbsUp'] . '  : thumbsDown ' . $row3['thumbsDown'] . '</p>';
+            }
+        ?>
+    </div> -->
+
 </body>
 </html>
 
