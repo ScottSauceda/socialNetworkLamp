@@ -25,10 +25,10 @@ function ajaxAddComment() {
                     // do something with the loaded data
                     // htmlObj = document.getElementById(htmlID) 
                     // htmlObj.innerHTML = xhrC.responseText +  htmlObj.innerHTML;
-                    location.reload();
+                    // location.reload();
                 } // end if
             } // end onreadystatechange
-            xhrC.open("GET", "https://socialnetwork-lamp.herokuapp.com/commentsAjaxProc.php?user=" + user + "&commenterID=" + commenterID + "&blogID=" + blogID + "&comment=" + comment, true);
+            xhrC.open("GET", "https://socialnetwork-lamp.herokuapp.com/commentsAJAXProc.php?user=" + user + "&commenterID=" + commenterID + "&blogID=" + blogID + "&comment=" + comment, true);
             xhrC.send(); // send the request for data
     }
 }
