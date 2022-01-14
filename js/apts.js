@@ -9,7 +9,7 @@ function ajaxAddComment() {
     var commenterID = document.forms["form1"]["commenterID"].value;
     var blogID = document.forms["form1"]["blogID"].value;
 
-    var htmlID = "commentsDiv";
+    // var htmlID = "commentsDiv";
 
     // Check to see if id = user is not an empty string
     var user = document.forms["form1"]["user"].value;
@@ -23,8 +23,8 @@ function ajaxAddComment() {
                 // check if the data is loaded
                 if(xhr.readyState == 4 && xhr.status == 200){
                     // do something with the loaded data
-                    htmlObj = document.getElementById(htmlID) 
-                    htmlObj.innerHTML = hrC.responseText +  htmlObj.innerHTML;
+                    // htmlObj = document.getElementById(htmlID) 
+                    // htmlObj.innerHTML = hrC.responseText +  htmlObj.innerHTML;
                     location.reload();
                 } // end if
             } // end onreadystatechange
