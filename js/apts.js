@@ -25,7 +25,7 @@ function ajaxAddComment() {
                     // do something with the loaded data
                     htmlObj = document.getElementById(htmlID) 
                     htmlObj.innerHTML = hrC.responseText +  htmlObj.innerHTML;
-                    // location.reload();
+                    location.reload();
                 } // end if
             } // end onreadystatechange
             xhr.open("GET", "https://socialnetwork-lamp.herokuapp.com/commentsAjaxProc.php?user=" + user + "&commenterID=" + commenterID + "&blogID=" + blogID + "&comment=" + comment, true);

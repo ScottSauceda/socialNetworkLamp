@@ -59,12 +59,12 @@
                     <!-- add comment section -->
 
                     <div class="comment-input">
-                        <form id = "form1" name = "form1"" method = "post" action = "">
+                        <form id = "form1" name = "form1"" method = "post" action = "https://socialnetwork-lamp.herokuapp.com/commentsAjaxProc.php">
                             <input type = "hidden" name = "user" id = "user" value = "<?php echo $username; ?>">
                             <input type = "hidden" name = "commenterID" id = "commenterID" value = "<?php echo $commenterID; ?>">
                             <input type = "hidden" name = "blogID" id = "blogID" value = "<?php echo $blogID; ?>" />
                             <input type="text" class="form-control" name="comment" id = "comment" style="margin-bottom:1em;">
-                            <div class="col text-left"><input type = "submit" name = "submit" id = "submitComment"  class=" btn-primary " value = "Post Comment" onClick="ajaxAddComment()" /></div>
+                            <div class="col text-left"><input type = "submit" name = "submit" id = "submit"  class=" btn-primary " value = "Post Comment" onClick="ajaxAddComment()" /></div>
                         </form>
                     </div>
             <br>
