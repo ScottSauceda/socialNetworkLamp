@@ -1,5 +1,7 @@
 
-
+ document.getElementById('submitComment').addEventListener('click', function(event){
+    event.preventDefault();
+});
 
 function ajaxAddComment() {
     var comment = document.forms["form1"]["comment"].value;
@@ -89,9 +91,6 @@ function editComment(){
     console.log(commentID);
     console.log(commentText);
 
-    document.getElementById('submitComment').addEventListener('click', function(event){
-        event.preventDefault();
-    });
 
     var xhr = new XMLHttpRequest();
     console.log("editCommentHere 2")
