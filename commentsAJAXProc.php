@@ -17,13 +17,13 @@
     $commentTimeStr = strtotime($commentTime); // timestamp to string
 
     
-    $newCommentPost = '<td align = "center"><br>' . $usernameComment . '</td>
-                        <td><a href="#" onclick="thumbVote(1, ' . $commentID . ')"><img style="width:50px;height:50px" src="images/arrowUp.png"></a>
-                        <strong id="' . $upID . '">' . $thumbsUp . '</strong>
-                        <br>
-                        <a href="#" onclick="thumbVote(2, ' . $commentID . ')"><img style="width:50px;height:50px" src="images/arrowDown.png"></a>
-                        <strong id="' . $downID . '">' . $thumbsDown . '</strong></td>
-                        <td align = "left" >'  . $comment . '</td><br>';
+    // $newCommentPost = '<td align = "center"><br>' . $usernameComment . '</td>
+    //                     <td><a href="#" onclick="thumbVote(1, ' . $commentID . ')"><img style="width:50px;height:50px" src="images/arrowUp.png"></a>
+    //                     <strong id="' . $upID . '">' . $thumbsUp . '</strong>
+    //                     <br>
+    //                     <a href="#" onclick="thumbVote(2, ' . $commentID . ')"><img style="width:50px;height:50px" src="images/arrowDown.png"></a>
+    //                     <strong id="' . $downID . '">' . $thumbsDown . '</strong></td>
+    //                     <td align = "left" >'  . $comment . '</td><br>';
     
     $ajaxCommentPost = '<div class="d-flex flex-row mb-2" > <img src = "images/members/' . $profilePic . '" width="40" class="rounded-image">&nbsp;&nbsp;<div class="d-flex flex-column ml-2"><span class="name">' . $usernameComment . '</span> <small id="' . $commentText . '" class="comment-text">'  . $comment . '</small>
     <div class="d-flex flex-row align-items-center status"> 
