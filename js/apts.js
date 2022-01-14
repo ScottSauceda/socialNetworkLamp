@@ -1,6 +1,8 @@
 document.getElementById('submitComment').addEventListener('click', function(event){
     event.preventDefault();
 });
+
+
 function ajaxAddComment() {
     var comment = document.forms["form1"]["comment"].value;
     var user = document.forms["form1"]["user"].value;
@@ -32,7 +34,6 @@ function ajaxAddComment() {
 }
 
 
-
 function thumbVote(thumbNum, commentID){
     var htmlID = "";
     if(thumbNum == 1){
@@ -51,6 +52,7 @@ function thumbVote(thumbNum, commentID){
         xhr.open("GET", "blogVoteProc.php?thumbNum=" + thumbNum + "&commentID=" + commentID, true);
         xhr.send(); // send the request for data
 }// end function
+
 
 function toggleEdit(commentID){
     console.log("toggleEdit")
@@ -73,12 +75,12 @@ function toggleEdit(commentID){
         editForm.style.display = "none";
     }
 
+    document.getElementById('submitEdit').addEventListener('click', function(event){
+        event.preventDefault();
+    });
 
 }// end function
 
-document.getElementById('submitEdit').addEventListener('click', function(event){
-    event.preventDefault();
-});
 
 function editComment(){
     console.log("editCommentHere 1")
