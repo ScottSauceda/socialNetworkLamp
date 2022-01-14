@@ -23,7 +23,7 @@ function ajaxAddComment() {
                 // check if the data is loaded
                 if(xhrC.readyState == 4 && xhrC.status == 200){
                     // do something with the loaded data
-                    // htmlObj = document.getElementById(htmlID) 
+                    htmlObj = document.getElementById(htmlID) 
                     htmlObj.innerHTML = xhrC.responseText +  htmlObj.innerHTML;
                     // location.reload();
                 } // end if
