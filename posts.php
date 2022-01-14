@@ -123,6 +123,6 @@
         </div>
     </div>
 </div>
-    <!-- <script src="js/apts.js"></script> -->
+    <script src="js/apts.js"></script>
 </body>
 </html>
