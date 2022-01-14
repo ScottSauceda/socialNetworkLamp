@@ -14,7 +14,7 @@ function ajaxAddComment() {
     // Check to see if id = user is not an empty string
     var user = document.forms["form1"]["user"].value;
     if(user == ""){
-        window.location = "https://socialnetwork-lamp.herokuapp.com/login.php";
+        window.location = "https://socialnetwork-lamp.herokuapp.com/index.php";
     } else {
         // new code
         
