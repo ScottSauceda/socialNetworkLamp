@@ -14,7 +14,7 @@ function ajaxAddComment() {
     // Check to see if id = user is not an empty string
     var user = document.forms["form1"]["user"].value;
     if(user == ""){
-        window.location = "login.php";
+        window.location = "https://socialnetwork-lamp.herokuapp.com/login.php";
     } else {
         // new code
         
@@ -28,7 +28,7 @@ function ajaxAddComment() {
                     location.reload();
                 } // end if
             } // end onreadystatechange
-            xhrC.open("GET", "commentsAjaxProc.php?user=" + user + "&commenterID=" + commenterID + "&blogID=" + blogID + "&comment=" + comment, true);
+            xhrC.open("GET", "https://socialnetwork-lamp.herokuapp.com/commentsAjaxProc.php?user=" + user + "&commenterID=" + commenterID + "&blogID=" + blogID + "&comment=" + comment, true);
             xhrC.send(); // send the request for data
     }
 }
