@@ -1,6 +1,4 @@
-document.getElementById('submitComment').addEventListener('click', function(event){
-    event.preventDefault();
-});
+
 
 
 function ajaxAddComment() {
@@ -90,6 +88,10 @@ function editComment(){
     console.log(comment);
     console.log(commentID);
     console.log(commentText);
+
+    document.getElementById('submitComment').addEventListener('click', function(event){
+        event.preventDefault();
+    });
 
     var xhr = new XMLHttpRequest();
     console.log("editCommentHere 2")
