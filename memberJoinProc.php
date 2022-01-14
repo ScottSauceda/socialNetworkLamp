@@ -51,9 +51,9 @@
         $IDmbr = mysqli_insert_id($conn);
         
         // make a default image record in images for this new member
-        $query_images = "INSERT into images(imgName, foreignID, catID, isMainPic) VALUES('default.jpg', $IDmbr, 3, 1)";
+        // $query_images = "INSERT into images(imgName, foreignID, catID, isMainPic) VALUES('default.jpg', $IDmbr, 3, 1)";
         
-        mysqli_query($conn, $query_images);
+        // mysqli_query($conn, $query_images);
         
         // wait 5 seconds before redirecting
         header("Refresh:5; url=login.php", true, 303);

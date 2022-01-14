@@ -44,7 +44,7 @@
                             </div>
                             <br>
                             <div class="form-group">
-                                <input class="form-control" ype="password" name="pswd2" id="pswd2" placeholder="Re-Enter Password" required />
+                                <input class="form-control" type="password" name="pswd2" id="pswd2" placeholder="Re-Enter Password" required />
                             </div>
                             <br>
                             <div class="col text-center">
