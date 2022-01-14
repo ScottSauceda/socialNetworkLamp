@@ -28,7 +28,7 @@ function ajaxAddComment() {
                     location.reload();
                 } // end if
             } // end onreadystatechange
-            xhr.open("GET", "https://socialnetwork-lamp.herokuapp.com/commentsAjaxProc.php?user=" + user + "&commenterID=" + commenterID + "&blogID=" + blogID + "&comment=" + comment, true);
+            xhr.open("GET", "https://socialnetwork-lamp.herokuapp.com/commentsAJAXProc.php?user=" + user + "&commenterID=" + commenterID + "&blogID=" + blogID + "&comment=" + comment, true);
             xhr.send(); // send the request for data
     }
 }
