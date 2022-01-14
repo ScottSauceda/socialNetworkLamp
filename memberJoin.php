@@ -57,6 +57,6 @@
             </div>
         </div>
     </div>
-    <script src="js/apts.js"></script>
+    <script src="js/signup.js"></script>
 </body>
 </html>
