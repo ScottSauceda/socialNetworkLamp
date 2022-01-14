@@ -14,7 +14,7 @@ function ajaxAddComment() {
     // Check to see if id = user is not an empty string
     var user = document.forms["form1"]["user"].value;
     if(user == ""){
-        window.location = "http://localhost:8888/socialnetworkLAMP/login.php";
+        window.location = "https://socialnetwork-lamp.herokuapp.com/login.php";
     } else {
         // new code
         
@@ -28,7 +28,7 @@ function ajaxAddComment() {
                     location.reload();
                 } // end if
             } // end onreadystatechange
-            xhrC.open("GET", "commentsAjaxProc.php?user=" + user + "&commenterID=" + commenterID + "&blogID=" + blogID + "&comment=" + comment, true);
+            xhrC.open("GET", "https://socialnetwork-lamp.herokuapp.com/commentsAjaxProc.php?user=" + user + "&commenterID=" + commenterID + "&blogID=" + blogID + "&comment=" + comment, true);
             xhrC.send(); // send the request for data
     }
 }
@@ -49,7 +49,7 @@ function thumbVote(thumbNum, commentID){
                 document.getElementById(htmlID).innerHTML = xhr.responseText;
             } // end if
         } // end onreadystatechange
-        xhr.open("GET", "blogVoteProc.php?thumbNum=" + thumbNum + "&commentID=" + commentID, true);
+        xhr.open("GET", "https://socialnetwork-lamp.herokuapp.com/blogVoteProc.php?thumbNum=" + thumbNum + "&commentID=" + commentID, true);
         xhr.send(); // send the request for data
 }// end function
 
@@ -103,7 +103,7 @@ function editComment(){
                 // console.log("editCommentHere 4")
             } // end if
         } // end onreadystatechange
-        xhr.open("GET", "editCommentProc.php?commentID=" + commentID + "&comment=" + comment, true);
+        xhr.open("GET", "https://socialnetwork-lamp.herokuapp.com/editCommentProc.php?commentID=" + commentID + "&comment=" + comment, true);
         xhr.send(); // send the request for data
 }// end function
 
@@ -116,6 +116,6 @@ function deleteComment(commentID){
                 location.reload();
             } // end if
         } // end onreadystatechange
-        xhr.open("GET", "deleteCommentProc.php?commentID=" + commentID, true);
+        xhr.open("GET", "https://socialnetwork-lamp.herokuapp.com/deleteCommentProc.php?commentID=" + commentID, true);
         xhr.send(); // send the request for data
 }// end function
