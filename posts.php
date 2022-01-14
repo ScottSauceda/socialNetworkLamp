@@ -64,7 +64,7 @@
                             <input type = "hidden" name = "commenterID" id = "commenterID" value = "<?php echo $commenterID; ?>">
                             <input type = "hidden" name = "blogID" id = "blogID" value = "<?php echo $blogID; ?>" />
                             <input type="text" class="form-control" name="comment" id = "comment" style="margin-bottom:1em;">
-                            <div class="col text-left"><input type = "submit" name = "submit" id = "submit"  class=" btn-primary " value = "Post Comment" onClick="ajaxAddComment()" /></div>
+                            <div class="col text-left"><input type = "submit" name = "submit" id = "submitComment"  class=" btn-primary " value = "Post Comment" onClick="ajaxAddComment()" /></div>
                         </form>
                     </div>
             <br>
