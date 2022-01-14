@@ -25,15 +25,7 @@
     //                     <strong id="' . $downID . '">' . $thumbsDown . '</strong></td>
     //                     <td align = "left" >'  . $comment . '</td><br>';
     
-    $ajaxCommentPost = '<div class="d-flex flex-row mb-2" > <img src = "images/members/' . $profilePic . '" width="40" class="rounded-image">&nbsp;&nbsp;<div class="d-flex flex-column ml-2"><span class="name">' . $usernameComment . '</span> <small id="' . $commentText . '" class="comment-text">'  . $comment . '</small>
-    <div class="d-flex flex-row align-items-center status"> 
-    <small class = "commentButtons"
-    onclick="thumbVote(1, ' . $commentID . ')"
-    >Like</small>
-    <small><strong id="' . $upID . '">' . $thumbsUp . '</strong></small>
-    </div>
-    </div>
-    </div>';
+    $ajaxCommentPost = '<div class="d-flex flex-row mb-2" > <img src = "images/members/' . $profilePic . '" width="40" class="rounded-image">&nbsp;&nbsp;<div class="d-flex flex-column ml-2"><span class="name">' . $usernameComment . '</span> <small id="' . $commentText . '" class="comment-text">'  . $comment . '</small> <div class="d-flex flex-row align-items-center status"> <small class = "commentButtons" onclick="thumbVote(1, ' . $commentID . ')" >Like</small><small><strong id="' . $upID . '">' . $thumbsUp . '</strong></small></div></div></div>';
 
     echo $ajaxCommentPost ;
 
