@@ -13,11 +13,11 @@
         
 
         $msg = '<a href="' . $_SERVER['PHP-SELF'] . '?logout=yep" class="nav-item nav-link">Log Out</a>';
-        $msg2 = '<a href="blogCMS.php" class="nav-item nav-link">Create Post</a>';
+        $msg2 = '<a href="https://socialnetwork-lamp.herokuapp.com/login.php/blogCMS.php" class="nav-item nav-link">Create Post</a>';
     } else { // no session var for user, redirect to login page
 
         $msg = 'Login';
-        $msg2 = '<a href="memberJoin.php" class="nav-item nav-link">Sign Up</a>';
+        $msg2 = '<a href="https://socialnetwork-lamp.herokuapp.com/login.php/memberJoin.php" class="nav-item nav-link">Sign Up</a>';
 
     }
 
@@ -30,7 +30,7 @@
         
         // $msg = "Login";
         // $msg2 = '<a href="memberJoin.php" class="nav-item nav-link">Sign Up</a>';
-        header("Location: login.php"); // bye-bye
+        header("Location: https://socialnetwork-lamp.herokuapp.com/login.php/login.php"); // bye-bye
     }
 
 ?>
