@@ -1,6 +1,5 @@
 <?php
     require_once("conn/connSocial.php");
-    // handle form data from blogCMS.php - book chapter 10
     $mbrID = $_POST['blogAuthor']; // this value is mbrID
     $blogTitle = $_POST['blogTitle'];
     $blogTitle = mysqli_real_escape_string($conn, $blogTitle);

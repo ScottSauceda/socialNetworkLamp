@@ -2,10 +2,6 @@
 
     require_once("conn/connSocial.php");
 
-    // $firstName = $_GET['firstName'];
-
-
-
     $query = "SELECT * FROM members ORDER BY lastName";
 
     $result = mysqli_query($conn, $query);

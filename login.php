@@ -1,6 +1,5 @@
 <?php
 
-    // see bottom of pg 82 in book
     if(!isset($_SESSION)) { // if no session running, start one
         session_start(); // this allows us to declare $_SESSION vars
     }

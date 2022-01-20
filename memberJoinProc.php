@@ -8,11 +8,10 @@
     
     <?php
     
-    // connect to MySQL as a whole (pg. 29)
+    // connect to MySQL as a whole
     require_once("conn/connSocial.php");
 
     // handle the incoming form vars from memberJoin.php
-    // see book pg 28-29
     $firstName = $_POST['firstName'];
     $lastName = $_POST['lastName'];
     $email = $_POST['email'];    
@@ -72,7 +71,6 @@
     
 <body>
     
-      <!-- see book pg 29 -->
       <h1 align="center">
           
             <?php 

@@ -2,8 +2,6 @@
     require_once("conn/connSocial.php");
 
 
-// $firstName = $_GET['firstName'];
-
 // posts
 $query = "SELECT * FROM blogs ORDER BY blogDateTime";
 $result = mysqli_query($conn, $query);

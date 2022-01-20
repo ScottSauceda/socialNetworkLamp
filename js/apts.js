@@ -77,7 +77,6 @@ function toggleEdit(commentID){
 
 
 function editComment(){
-    console.log("editCommentHere 1")
     var comment = document.forms["form2"]["comment"].value;
     var commentID = document.forms["form2"]["commentID"].value;
     var commentText = "text" + commentID;
