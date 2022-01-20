@@ -9,7 +9,6 @@ function ajaxAddComment() {
     var commenterID = document.forms["form1"]["commenterID"].value;
     var blogID = document.forms["form1"]["blogID"].value;
 
-    // var htmlID = "commentsDiv";
 
     // Check to see if id = user is not an empty string
     var user = document.forms["form1"]["user"].value;
@@ -23,8 +22,6 @@ function ajaxAddComment() {
                 // check if the data is loaded
                 if(xhr.readyState == 4 && xhr.status == 200){
                     // do something with the loaded data
-                    // htmlObj = document.getElementById(htmlID) 
-                    // htmlObj.innerHTML = hrC.responseText +  htmlObj.innerHTML;
                     location.reload();
                 } // end if
             } // end onreadystatechange
@@ -55,7 +52,6 @@ function thumbVote(thumbNum, commentID){
 
 
 function toggleEdit(commentID){
-    console.log("toggleEdit")
 
     var formElem = "form" + commentID;
     var btnElem = "button" + commentID;
@@ -64,10 +60,8 @@ function toggleEdit(commentID){
     const editForm = document.getElementById(formElem);
     const editBtn = document.getElementById(btnElem);
 
-    // console.log(commentID)
     
     if(editBtn.innerHTML == "Edit"){
-        // console.log("editBtn TOGGLE")
         editBtn.innerHTML = "Cancel";
         editForm.style.display = "block";
     } else {
@@ -87,21 +81,14 @@ function editComment(){
     var comment = document.forms["form2"]["comment"].value;
     var commentID = document.forms["form2"]["commentID"].value;
     var commentText = "text" + commentID;
-    console.log(comment);
-    console.log(commentID);
-    console.log(commentText);
 
 
     var xhr = new XMLHttpRequest();
-    console.log("editCommentHere 2")
         xhr.onreadystatechange = function(){
             // check if the data is loaded
             if(xhr.readyState == 4 && xhr.status == 200){
-                console.log("editCommentHere 3")
                 // do something with the loaded data
                 document.getElementById(commentText).innerHTML = xhr.responseText;
-                // console.log(responseText);
-                // console.log("editCommentHere 4")
             } // end if
         } // end onreadystatechange
         xhr.open("GET", "https://socialnetwork-lamp.herokuapp.com/editCommentProc.php?commentID=" + commentID + "&comment=" + comment, true);
