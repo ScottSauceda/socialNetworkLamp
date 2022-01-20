@@ -61,14 +61,3 @@ $result3 = mysqli_query($conn, $query3);
 
 </body>
 </html>
-
-<!--
-
-    clearDB for tutorialdeploy
-    mysql://bd34aec9c1adb3:c9d8a168@us-cdbr-east-05.cleardb.net/heroku_314bba18224465f?reconnect=true
-
-    Username : bd34aec9c1adb3
-    Password : c9d8a168
-    Host : us-cdbr-east-05.cleardb.net
-
- -->
